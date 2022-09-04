@@ -15,3 +15,14 @@ L'option ``Temporary stop NTP Service`` permet d'interrompre le service raspios 
 Logiquement s'il n'y a pas de connexion, il n'a pas lieu d'éteindre le service qui est en timeout lors de son exécution normale.
 
 *Une compilation pour RaspberryPi/arm64 est présent dans /distribution du projet*
+
+## Compilation
+
+Installez le framework flutter sur votre machine RaspberryPI
+
+```bash
+$ cd /path/to/project
+$ flutter pub get
+$ flutter build linux --release
+$ cd ./build/linux/(plateform eg:arm64)/release/bundle
+```
